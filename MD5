@@ -1,0 +1,10 @@
+e56cf39b0d7c493ef6b001874df11b2f *DESCRIPTION
+b538d761026b7436c8e7e8db4fcb71ed *NAMESPACE
+a2beec4362ea78f7f57e938fdcb91769 *NEWS
+ada37bfbd45b0f5b6e8ec258c2099b23 *R/RStata-package.R
+36656b2cf58d08a8f7af5bd6210b8e71 *R/chooseStataBin.R
+ef869c9eac8bd3c01e1691541e9d6276 *R/stata.R
+cd320f40ecc257e85f92b4e3931df23c *README.md
+821a71f59dfd0d8066f2844ca9432c1d *man/RStata.Rd
+05a113eea084c913178774683e89ae40 *man/chooseStataBin.Rd
+27f5f9fd015ca7a8741b8ecc22288ec6 *man/stata.Rd
