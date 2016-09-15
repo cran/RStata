@@ -1,5 +1,9 @@
-RStata [![Build Status](https://travis-ci.org/lbraglia/RStata.svg)](https://travis-ci.org/lbraglia/RStata) [![Build status](https://ci.appveyor.com/api/projects/status/hr28hr9hu7f80cpy)](https://ci.appveyor.com/project/lbraglia/rstata)
-======
+# RStata
+
+[![Linux Build Status](https://travis-ci.org/lbraglia/RStata.svg?branch=master)](https://travis-ci.org/lbraglia/RStata)
+[![](http://www.r-pkg.org/badges/version/RStata)](http://www.r-pkg.org/pkg/RStata)
+[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/RStata)](http://www.r-pkg.org/pkg/RStata)
+
 A simple interface for `R -> Stata`, allowing the user to:
 - execute Stata commands (both inline and from a `.do` file) from R;
 - pass a `data.frame` to Stata;
@@ -35,8 +39,21 @@ to set this option the first time:
 - in Linux it searches for the 4 (cli) Stata binaries (`stata-mp`,
   `stata-se`, `stata`, `stata-sm`) in the search path and prompt a menu to
   choose one;
-- in Windows does a `file.choose` and a bit of manipulation to obtain a valid
-  Windows path (no `.exe` extension).
+- in Windows does a `file.choose` (and a bit of manipulation, 
+  in Windows, to obtain a valid path).
+- other system are not handled by `chooseStataBin` (mainly because of
+  my ignorance regarding both the system itself and Stata installation
+  on it, but contributions are welcome).
+
+  **Mac users** are a notable group: at this stage they should set the
+  path for the *command line* executable (not the GUI app). Eg for a
+  Stata13 SE installation in El Capitain (with default options) the
+  path is `'/Applications/Stata/StataSE.app/Contents/MacOS/stata-se'`.  In
+  other cases (Stata licenses, installation path and so on) the path
+  could be slightly different (BTW, i've found the path 'exploring'
+  the filesystem with a terminal, not the graphics explorer since it
+  'stops' at 'StataSE.app').
+  
 
 `chooseStataBin` set up `RStata.StataPath` accordingly to user advice and
 return the path; but you may consider to put the path returned in
