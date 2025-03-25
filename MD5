@@ -1,9 +1,9 @@
-bbe724ac532a5bba5c9c2a19a0a19749 *DESCRIPTION
+0cd9b6662b8b966f0aba803db543e885 *DESCRIPTION
 b538d761026b7436c8e7e8db4fcb71ed *NAMESPACE
 ada37bfbd45b0f5b6e8ec258c2099b23 *R/RStata-package.R
 8ca9fe75022df15eb2934e5a2d2fdb6d *R/chooseStataBin.R
-646932362175f63d320f64a4b723f4d1 *R/stata.R
-a5065bf3e68462316f5c7a6bae550c18 *README.md
-821a71f59dfd0d8066f2844ca9432c1d *man/RStata.Rd
-05a113eea084c913178774683e89ae40 *man/chooseStataBin.Rd
-14abf5996e362ea3168febd4ad1719d6 *man/stata.Rd
+98a48a5bf66293fab43301a78f296501 *R/stata.R
+a4044de5fbb31b6a6cb587504cb141ff *README.md
+22c8ac8cb4cf8ed661adff3a42930d18 *man/RStata.Rd
+77ef77ca8759376d78affc6cf640128f *man/chooseStataBin.Rd
+14f4488c2dcb7eec3e2398528d00e87f *man/stata.Rd

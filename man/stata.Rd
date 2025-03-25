@@ -4,12 +4,17 @@
 \alias{stata}
 \title{Send commands to a Stata process}
 \usage{
-stata(src = stop("At least 'src' must be specified"), data.in = NULL,
-  data.out = FALSE, stata.path = getOption("RStata.StataPath",
-  stop("You need to set up a Stata path; ?chooseStataBin")),
+stata(
+  src = stop("At least 'src' must be specified"),
+  data.in = NULL,
+  data.out = FALSE,
+  stata.path = getOption("RStata.StataPath",
+    stop("You need to set up a Stata path; ?chooseStataBin")),
   stata.version = getOption("RStata.StataVersion",
-  stop("You need to specify your Stata version")),
-  stata.echo = getOption("RStata.StataEcho", TRUE), ...)
+    stop("You need to specify your Stata version")),
+  stata.echo = getOption("RStata.StataEcho", TRUE),
+  ...
+)
 }
 \arguments{
 \item{src}{character vector of length 1 (path to \code{.do} file) or more
@@ -26,7 +31,7 @@ the Stata command are returned to R.}
 
 \item{stata.echo}{logical value. If \code{TRUE} stata text output will be printed}
 
-\item{...}{parameter passed to \code{\link{write.dta}}}
+\item{...}{parameter passed to \code{\link[foreign]{write.dta}}}
 }
 \description{
 Function that sends commands to a Stata process.
@@ -63,4 +68,3 @@ head(auto)
 (y <- stata("replace a = 2", data.in = x, data.out = TRUE))
 }
 }
-

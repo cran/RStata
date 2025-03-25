@@ -1,9 +1,5 @@
 # RStata
 
-[![Linux Build Status](https://travis-ci.org/lbraglia/RStata.svg?branch=master)](https://travis-ci.org/lbraglia/RStata)
-[![](http://www.r-pkg.org/badges/version/RStata)](http://www.r-pkg.org/pkg/RStata)
-[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/RStata)](http://www.r-pkg.org/pkg/RStata)
-
 A simple `R -> Stata` interface allowing the user to:
 - execute Stata commands (both inline and from a `.do` file) from R;
 - pass a `data.frame` to Stata;
@@ -73,6 +69,8 @@ See `?stata`.
 
 ## Troubleshooting
 
+### set more off, permanently
+
 In some setup the package seems to freeze even with the simplest
 example (eg `stata('set obs 10')`).
 This is likely dued to Stata `more` option, which has to be set
@@ -81,6 +79,10 @@ to off:
 ```
 set more off, permanently
 ```
+
+### avoid cd in `profile.do`
+
+See [issue 6](https://github.com/lbraglia/RStata/issues/6).
 
 ## Examples
 
@@ -178,6 +180,6 @@ Eg in order to obtain `auto` dataset
 
 ## Contribute
 You are welcome to:
-* submit suggestions and bug-reports at: <http://github.com/lbraglia/RStata/issues>
-* fork and send a pull request on: <http://github.com/lbraglia/RStata/>
+* submit suggestions and bug-reports at: <https://github.com/lbraglia/RStata/issues>
+* fork and send a pull request on: <https://github.com/lbraglia/RStata/>
 * send an e-mail to: <lbraglia@gmail.com>
